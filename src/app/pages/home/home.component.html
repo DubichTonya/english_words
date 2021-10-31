@@ -1,0 +1,8 @@
+<p>home works!</p>
+<div *ngFor="let item of data$ | async">
+  <p>{{item?.word}}</p>
+  <p>{{item?.translate}}</p>
+  <p [innerHTML]="item?.textExample"></p>
+  <p>{{item?.textExampleTranslate}}</p>
+  <p></p>
+</div>
